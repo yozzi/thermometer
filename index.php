@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StartUp Thermometer</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+    
+<body>
+    
+<?php
+    $montant = trim(file_get_contents('montant.txt'));
+    $objectif = trim(file_get_contents('objectif.txt'));   
+    $pourcentage = ( $montant / $objectif) * 100;
+    $pourcentage = round($pourcentage);
+?>
+  <section>
+    <div class="container">
+      <div class="thermometer" id="thermometer"></div>
+      <div id="boule"></div>
+    </div>
+  </section>
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.thermometer.js"></script>
+  <script>
+    (function($) {
+      $(function() {
+        $('.thermometer').thermometer({
+          percent: <?php echo $pourcentage ?>, 
+          speed: 3000,
+          orientation: 'vertical'
+        })
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
