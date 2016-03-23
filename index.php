@@ -21,6 +21,10 @@
       <div id="boule"></div>
     </div>
   </section>
+    
+<?php echo 'Montant: ' . $montant . ' Objectif: ' . $objectif?>
+    
+    <a href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
   
   <script src="js/jquery.js"></script>
   <script src="js/jquery.thermometer.js"></script>
@@ -29,7 +33,7 @@
       $(function() {
         $('.thermometer').thermometer({
           percent: <?php echo $pourcentage ?>, 
-          speed: 3000,
+          speed: 6000,
           orientation: 'vertical'
         })
       });
