@@ -20,14 +20,14 @@
 ?>
 <div class="container">
     <div class="row">
-        <div class="zone col-xs-7">
+        <div class="zone col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-3">
             <div id="gloss"></div>
             <div id="grad"></div>
             <div class="thermometer" id="thermometer"></div>
             <div id="boule"></div>
             <div id="boule-out"></div>
         </div>
-        <div class="zone col-xs-5">
+        <div class="zone col-xs-6">
 <?php echo 'Objectif: ' . $objectif ?>
     
 <span class="milestone-count"><?php echo $montant; ?></span>
