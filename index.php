@@ -17,8 +17,11 @@
 ?>
   <section>
     <div class="container">
+      <div id="gloss"></div>
+        <div id="grad"></div>
       <div class="thermometer" id="thermometer"></div>
       <div id="boule"></div>
+      <div id="boule-out"></div>
     </div>
   </section>
     
