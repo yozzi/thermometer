@@ -1,6 +1,4 @@
 body {
-    
-    margin:0px;
     background-color:#36393b;
     background: -webkit-gradient(radial, left top, left bottom, from(#669), to(#262a2d)); /* Saf4+, Chrome */
     background: -webkit-radial-gradient(center, circle, #669, #262a2d); /* Chrome 10+, Saf5.1+ */
@@ -15,18 +13,13 @@ body {
  
 }
 
-.container{
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
 .thermometer-outer {
     background-color: #c4f0ff;
     border: 5px solid #fff;
-    border-radius: 3px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     height: 400px;
-    width: 40px;
+    width: 50px;
     margin: 0 auto;
 }
 
@@ -54,18 +47,18 @@ body {
     height: 410px;
     margin: 0 auto;
     position: absolute;
-    margin-left: 50%;
+    left: 50%;
     z-index: 1;
 }
 
 #boule{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: #3f83f7;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    top:-10px;
+    top:-11px;
     z-index: 2;
 }
 
@@ -76,7 +69,7 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    top:-95px;
+    top:-86px;
     border: 5px solid #fff;
     z-index: -1;
 }

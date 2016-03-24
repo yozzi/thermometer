@@ -23,12 +23,12 @@ if(isset($_POST['objectif'])) {
 }
 ?>
 
-<form action="index.php" method="POST">
+<form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="POST">
     <input name="montant" type="text" required />
     <input type="submit" name="submit" value="Montant">
 </form>
 
-<form action="index.php" method="POST">
+<form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="POST">
     <input name="objectif" type="text" required />
     <input type="submit" name="submit" value="Objectif">
 </form>

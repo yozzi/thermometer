@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>StartUp Thermometer</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
     
 <body>
@@ -15,22 +18,27 @@
     $pourcentage = ( $montant / $objectif) * 100;
     $pourcentage = round($pourcentage);
 ?>
-  <section>
-    <div class="container">
-      <div id="gloss"></div>
-        <div id="grad"></div>
-      <div class="thermometer" id="thermometer"></div>
-      <div id="boule"></div>
-      <div id="boule-out"></div>
+<div class="container">
+    <div class="row">
+        <div class="xs-col-12">
+            <div id="gloss"></div>
+            <div id="grad"></div>
+            <div class="thermometer" id="thermometer"></div>
+            <div id="boule"></div>
+            <div id="boule-out"></div>
+        </div>
     </div>
-  </section>
+</div>
     
-<?php echo 'Montant: ' . $montant . ' Objectif: ' . $objectif?>
+<?php echo 'Objectif: ' . $objectif ?>
+    
+<span class="milestone-count"><?php echo $montant; ?></span>
     
     <a href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
   
-  <script src="js/jquery.js"></script>
   <script src="js/jquery.thermometer.js"></script>
+  <script src="js/jquery.counterup.js"></script>
+  <script src="js/waypoint.js"></script>
   <script>
     (function($) {
       $(function() {
@@ -42,5 +50,14 @@
       });
     })(jQuery);
   </script>
+
+    
+<script type="text/javascript">
+    jQuery(document).ready(function( $ ) {
+        jQuery('.milestone-count').counterUp({
+            time: 6000 // the speed time in ms
+        });
+    });
+</script>
 </body>
 </html>
