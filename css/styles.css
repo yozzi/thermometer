@@ -12,6 +12,9 @@ body {
     background: -webkit-radial-gradient(50% 50%, circle ,#669, #262a2d); /* Chrome 10+, Saf5.1+ */
  
 }
+.zone{
+    margin-top: 20px;
+}
 
 .thermometer-outer {
     background-color: #c4f0ff;

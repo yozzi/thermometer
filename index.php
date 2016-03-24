@@ -20,21 +20,24 @@
 ?>
 <div class="container">
     <div class="row">
-        <div class="xs-col-12">
+        <div class="zone col-xs-7">
             <div id="gloss"></div>
             <div id="grad"></div>
             <div class="thermometer" id="thermometer"></div>
             <div id="boule"></div>
             <div id="boule-out"></div>
         </div>
-    </div>
-</div>
-    
+        <div class="zone col-xs-5">
 <?php echo 'Objectif: ' . $objectif ?>
     
 <span class="milestone-count"><?php echo $montant; ?></span>
     
     <a href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
+        </div>
+    </div>
+</div>
+    
+
   
   <script src="js/jquery.thermometer.js"></script>
   <script src="js/jquery.counterup.js"></script>
