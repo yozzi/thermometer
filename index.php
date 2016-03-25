@@ -20,19 +20,25 @@
 ?>
 <div class="container">
     <div class="row">
-        <div class="zone col-xs-5 col-xs-offset-1 col-sm-3 col-sm-offset-3">
+        <div class="zone col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
             <div id="gloss"></div>
             <div id="grad"></div>
             <div class="thermometer" id="thermometer"></div>
             <div id="boule"></div>
             <div id="boule-out"></div>
         </div>
-        <div class="zone col-xs-6">
-            <div><?php echo 'Objectif: ' . $objectif ?></div>
+        <div class="zone col-xs-3 col-sm-4">
+            <div class="alert alert-danger objectif"><?php echo 'Objectif : ' . $objectif ?> $</div>
+            
+            <br />
     
-<div class="milestone-count"><?php echo $montant; ?></div>
+            <div class="alert alert-success montant"><div class="milestone-count"><?php echo $montant; ?></div> $</div>
+            
+            <br />
     
-    <a class="btn btn-primary" href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
+            <a class="btn btn-primary pull-right" href="<?php echo $_SERVER['REQUEST_URI'] ?>"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
+        </div>
+        <div class="zone col-xs-3 col-sm-2">
         </div>
     </div>
 </div>

@@ -77,3 +77,21 @@ label{
     border: 5px solid #fff;
     z-index: -1;
 }
+
+.alert{
+/*    display: inline-block;*/
+    font-weight: bolder;
+    text-align: center;
+}
+
+.montant{
+    font-size: 45px;
+}
+
+.objectif{
+    font-size: 25px;
+}
+
+.milestone-count{
+    display: inline
+}
