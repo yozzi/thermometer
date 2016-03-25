@@ -28,11 +28,11 @@
             <div id="boule-out"></div>
         </div>
         <div class="zone col-xs-6">
-<?php echo 'Objectif: ' . $objectif ?>
+            <div><?php echo 'Objectif: ' . $objectif ?></div>
     
-<span class="milestone-count"><?php echo $montant; ?></span>
+<div class="milestone-count"><?php echo $montant; ?></div>
     
-    <a href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
+    <a class="btn btn-primary" href="<?php echo $_SERVER['REQUEST_URI'] ?>">Click to refresh the page</a>
         </div>
     </div>
 </div>
