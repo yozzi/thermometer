@@ -84,6 +84,11 @@ label{
     text-align: center;
 }
 
+.refresh span{
+    font-size: 34px;
+    line-height: 40px;
+}
+
 .montant{
     font-size: 45px;
 }

@@ -36,7 +36,7 @@
             
             <br />
     
-            <a class="btn btn-primary pull-right" href="<?php echo $_SERVER['REQUEST_URI'] ?>"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
+            <a class="btn btn-primary pull-right refresh" href="<?php echo $_SERVER['REQUEST_URI'] ?>"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a>
         </div>
         <div class="zone col-xs-3 col-sm-2">
         </div>
