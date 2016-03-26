@@ -24,7 +24,7 @@
                         die('Impossible d\'&eacute;crire dans le fichier');
                     }
                     else {
-                        echo "<div class=\"alert alert-info\" role=\"alert\">Montant mis &agrave; jour</div>";
+                        echo "<div class=\"alert alert-info\" role=\"alert\"><strong>Montant</strong> mis &agrave; jour</div>";
                     }
                 }
 
@@ -35,7 +35,7 @@
                         die('Impossible d\'&eacute;crire dans le fichier');
                     }
                     else {
-                        echo "<div class=\"alert alert-info\" role=\"alert\">Objectif mis &agrave; jour</div>";
+                        echo "<div class=\"alert alert-info\" role=\"alert\"><strong>Objectif</strong> mis &agrave; jour</div>";
                     }
                 }
                 ?>
