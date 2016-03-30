@@ -63,7 +63,7 @@
   </script>
 
     <?php
-        if ( $pourcentage >= 50 ){ $color = 'green'; };
+        if ( $pourcentage >= 50 ){ $color = 'yellow'; };
         if ( $pourcentage >= 75 ){ $color = 'orange'; };
         if ( $pourcentage >= 85 ){ $color = 'red'; };
     ?>
